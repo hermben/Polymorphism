@@ -22,10 +22,12 @@ namespace Polymorphism
         public override void CalculateWeeklySalary(int weeklyHours, int wage)
         {
             var salary = weeklyHours * wage;
-            Console.WriteLine("\nThis HAPPY CONTRACTOR worked {0} hrs. " + 
+            string expectedResponse =string.Format("\nThis HAPPY CONTRACTOR worked {0} hrs. " + 
                               "Paid for {0} hrs at $ {1}" +
                               "/hr = ${2} ", weeklyHours, wage, salary);
+            Console.WriteLine("\n" + expectedResponse + "\n");
             Console.WriteLine("---------------------------------------------\n");
+            return expectedResponse;
         }
     }
 
